@@ -1,19 +1,6 @@
 /// C++ Program to find Binary Exponent Iteratively and Recursively.
 
 #include<iostream>
-/*
- * Calculate a^b in O(log(b)) by converting b to a binary number.
- * Binary exponentiation is also known as exponentiation by squaring.
- * NOTE : This is a far better approach compared to naive method which provide O(b) operations.
- * Example:
- * 10 in base 2 is 1010.
- * 2^10 = 2^(1010) = 2^8 * 2^2
- * 2^1 = 2
- * 2^2 = (2^1)^2 = 2^2 = 4
- * 2^4 = (2^2)^2 = 4^2 = 16
- * 2^8 = (2^4)^2 = 16^2 = 256
- * Hence to calculate 2^10 we only need to multiply 2^8 and 2^2 skipping 2^1 and 2^4.
-*/
 
 /// Recursive function to calculate exponent in O(log(n)) using binary exponent.
 int binExpo(int a, int b) {
